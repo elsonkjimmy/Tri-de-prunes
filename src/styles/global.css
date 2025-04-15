@@ -1,0 +1,61 @@
+/* Reset simple */
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+  
+body {
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 3rem;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+  
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #334155;
+  margin-bottom: 2rem;
+}
+
+  
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  transform: scale(1.05);
+}
+
+  
