@@ -1,0 +1,52 @@
+/* ImageUploader.module.css */
+.uploadContainer {
+    border: 2px dashed #9c27b0;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(156, 39, 176, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dragActive {
+    background-color: rgba(156, 39, 176, 0.1);
+    border-color: #6a0dad;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .previewImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .uploadContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .uploadIcon {
+    font-size: 3rem;
+    color: #6a0dad;
+  }
+  
+  .uploadText {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .uploadSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+  }

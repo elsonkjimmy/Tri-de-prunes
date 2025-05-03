@@ -1,0 +1,94 @@
+/* PredictionResult.module.css */
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.title {
+  color: #6a0dad;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.imageComparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imageCard {
+  background: #f9f5ff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.imageCard h3 {
+  color: #6a0dad;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.results {
+  display: flex;
+  gap: 2rem;
+}
+
+.predictionDetails {
+  flex: 1;
+}
+
+.detailItem {
+  margin-bottom: 1.5rem;
+}
+
+.detailLabel {
+  display: block;
+  font-weight: 600;
+  color: #6a0dad;
+  margin-bottom: 0.5rem;
+}
+
+.detailValue {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.confidenceValue {
+  position: relative;
+}
+
+.confidenceBarContainer {
+  width: 100%;
+  height: 8px;
+  background: #e1bee7;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.confidenceBar {
+  height: 100%;
+  background: #6a0dad;
+  border-radius: 4px;
+}
+
+.gaugeContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

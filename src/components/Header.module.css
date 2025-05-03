@@ -1,0 +1,160 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .header.scrolled {
+    box-shadow: 0 4px 30px rgba(106, 13, 173, 0.1);
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d033b;
+    transition: all 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #6a0dad;
+  }
+  
+  .logoSvg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  
+  .navLink:hover {
+    color: #6a0dad;
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #6a0dad, #9c27b0);
+    transition: width 0.3s ease;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+  .ctaButton {
+    background: linear-gradient(135deg, #6a0dad, #8e24aa);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(106, 13, 173, 0.2);
+    margin-left: 1rem;
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(106, 13, 173, 0.3);
+  }
+  
+  .menuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6a0dad;
+    z-index: 1001;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .nav {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menuButton {
+      display: block;
+    }
+    
+    .nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: 100vh;
+      background: white;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 6rem 2rem 2rem;
+      box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      gap: 1.5rem;
+    }
+    
+    .navOpen {
+      right: 0;
+    }
+    
+    .ctaButton {
+      margin: 1rem 0 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1rem 1.5rem;
+    }
+    
+    .logo {
+      font-size: 1.3rem;
+    }
+    
+    .logoSvg {
+      width: 32px;
+      height: 32px;
+    }
+  }
